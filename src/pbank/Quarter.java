@@ -15,10 +15,12 @@ public class Quarter extends Money {
     totalCost = coinsAdded * value;
   }
 
+  @Override
   public String getCoinQuantity() {
     return (coinQuantity == 1) ? "1 Quarter" : coinQuantity + " Quarters";
   }
 
+  @Override
   public double getTotalCost() {
     return totalCost;
   }

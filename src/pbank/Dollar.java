@@ -15,10 +15,12 @@ public class Dollar extends Money {
     totalCost = coinsAdded * value;
   }
 
+  @Override
   public String getCoinQuantity() {
     return "$" + coinQuantity;
   }
 
+  @Override
   public double getTotalCost() {
     return totalCost;
   }

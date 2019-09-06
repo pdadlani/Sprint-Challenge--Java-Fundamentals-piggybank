@@ -15,10 +15,12 @@ public class Dime extends Money {
     totalCost = coinsAdded * value;
   }
 
+  @Override
   public String getCoinQuantity() {
     return (coinQuantity == 1) ? "1 Dime" : coinQuantity + " Dimes";
   }
 
+  @Override
   public double getTotalCost() {
     return totalCost;
   }

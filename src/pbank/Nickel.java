@@ -15,10 +15,12 @@ public class Nickel extends Money {
     totalCost = coinsAdded * value;
   }
 
+  @Override
   public String getCoinQuantity() {
     return (coinQuantity == 1) ? "1 Nickel" : coinQuantity + " Nickels";
   }
 
+  @Override
   public double getTotalCost() {
     return totalCost;
   }
