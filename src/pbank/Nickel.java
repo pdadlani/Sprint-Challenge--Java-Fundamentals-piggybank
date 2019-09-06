@@ -26,7 +26,14 @@ public class Nickel extends Money {
   }
 
   @Override
+  public void addCoin(int coinsAdded) {
+    coinQuantity += coinsAdded;
+    totalCost += coinsAdded * value;
+  }
+
+  @Override
   public void removeCoin(int coinsRemoved) {
     coinQuantity = coinQuantity - coinsRemoved;
+    totalCost -= coinsRemoved * value;
   }
 }
