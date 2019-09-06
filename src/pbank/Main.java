@@ -41,5 +41,18 @@ public class Main {
     }
 
     System.out.println("The piggy bank holds " + fp.format(total));
+    System.out.println();
+
+    System.out.println(" *** Removing a Coin *** ");
+    piggyBank.remove(0);
+    System.out.println();
+    piggyBank.forEach(m -> System.out.println(m.getCoinQuantity()));
+    System.out.println(" Total amount in Piggy Bank from removing a coin *** ");
+    total = 0;
+    for (Money m : piggyBank) {
+      total = total + m.getTotalCost();
+    }
+    System.out.println("The piggy bank holds " + fp.format(total));
+    System.out.println();
   }
 }

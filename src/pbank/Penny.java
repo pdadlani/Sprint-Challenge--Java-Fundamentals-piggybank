@@ -24,4 +24,9 @@ public class Penny extends Money {
   public double getTotalCost() {
     return totalCost;
   }
+
+  @Override
+  public void removeCoin(int coinsRemoved) {
+    coinQuantity = coinQuantity - coinsRemoved;
+  }
 }
